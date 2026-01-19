@@ -6,7 +6,7 @@ import { AuthModule } from './modules/auth';
 import { CredentialsModule } from './modules/credentials';
 import { PromptsModule } from './modules/prompts';
 import { LimitsModule } from './modules/limits';
-import { LogsModule } from './modules/logs';
+import { LogsModule } from './modules/logs/index';
 import { MonitoringModule } from './modules/monitoring';
 import { DeepSeekModule } from './modules/deepseek';
 import { GeminiModule } from './modules/gemini';

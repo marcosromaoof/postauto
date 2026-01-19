@@ -5,7 +5,7 @@ import * as path from 'path';
 import FormData from 'form-data';
 import { CredentialsService } from '../credentials';
 import { LimitsService } from '../limits';
-import { LogsService } from '../logs';
+import { LogsService } from '../logs/index';
 import { LogSource, UsageType } from '../../database/entities';
 import { GeneratedImage } from '../gemini';
 

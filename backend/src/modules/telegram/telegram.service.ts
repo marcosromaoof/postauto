@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import TelegramBot from 'node-telegram-bot-api';
 import { Post, PostStatus, LogSource } from '../../database/entities';
 import { CredentialsService } from '../credentials';
-import { LogsService } from '../logs';
+import { LogsService } from '../logs/index';
 
 @Injectable()
 export class TelegramService implements OnModuleInit, OnModuleDestroy {

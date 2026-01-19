@@ -5,7 +5,7 @@ import * as path from 'path';
 import { v4 as uuidv4 } from 'uuid';
 import { CredentialsService } from '../credentials';
 import { LimitsService } from '../limits';
-import { LogsService } from '../logs';
+import { LogsService } from '../logs/index';
 import { LogSource, UsageType } from '../../database/entities';
 
 export interface GeneratedImage {
