@@ -3,7 +3,7 @@ import axios from 'axios';
 import { CredentialsService } from '../credentials';
 import { LimitsService } from '../limits';
 import { PromptsService } from '../prompts';
-import { LogsService } from '../logs';
+import { LogsService } from '../logs/logs.service';
 import { LogSource, UsageType } from '../../database/entities';
 
 export interface GeneratedContent {

@@ -7,7 +7,7 @@ import { DeepSeekService } from '../deepseek';
 import { GeminiService } from '../gemini';
 import { WordPressService } from '../wordpress';
 import { TelegramService } from '../telegram';
-import { LogsService } from '../logs';
+import { LogsService } from '../logs/logs.service';
 import { JobType } from './queue.service';
 
 @Processor('post-processing')

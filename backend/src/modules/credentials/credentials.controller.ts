@@ -2,6 +2,7 @@ import { Controller, Get, Put, Body, UseGuards } from '@nestjs/common';
 import { CredentialsService } from './credentials.service';
 import { JwtAuthGuard } from '../../common/guards/jwt-auth.guard';
 import { IsString, IsOptional, IsBoolean } from 'class-validator';
+import { Credentials } from '../../database/entities';
 
 class UpdateCredentialDto {
   @IsString()
@@ -36,7 +37,7 @@ export class CredentialsController {
 
   @Put('bulk')
   async updateMultiple(@Body() dto: UpdateMultipleCredentialsDto) {
-    const results = [];
+    const results: Credentials[] = [];
     for (const cred of dto.credentials) {
       const result = await this.credentialsService.set(cred.key, cred.value, cred.encrypt !== false);
       results.push(result);

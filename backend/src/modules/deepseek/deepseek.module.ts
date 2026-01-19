@@ -3,10 +3,9 @@ import { DeepSeekService } from './deepseek.service';
 import { CredentialsModule } from '../credentials';
 import { LimitsModule } from '../limits';
 import { PromptsModule } from '../prompts';
-import { LogsModule } from '../logs';
 
 @Module({
-  imports: [CredentialsModule, LimitsModule, PromptsModule, LogsModule],
+  imports: [CredentialsModule, LimitsModule, PromptsModule],
   providers: [DeepSeekService],
   exports: [DeepSeekService],
 })

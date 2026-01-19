@@ -9,7 +9,6 @@ import { DeepSeekModule } from '../deepseek';
 import { GeminiModule } from '../gemini';
 import { WordPressModule } from '../wordpress';
 import { TelegramModule } from '../telegram';
-import { LogsModule } from '../logs';
 
 @Module({
   imports: [
@@ -31,7 +30,6 @@ import { LogsModule } from '../logs';
     GeminiModule,
     WordPressModule,
     TelegramModule,
-    LogsModule,
   ],
   providers: [QueueService, PostProcessor],
   exports: [QueueService],
